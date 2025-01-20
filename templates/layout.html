@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+        }
+        .content {
+            padding: 20px;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="content">
+            {{content}}
+            {{#if imageUrl}}
+            <img src="{{imageUrl}}" alt="Email Image" class="image">
+            {{/if}}
+        </div>
+        <div class="footer">
+            {{footer}}
+        </div>
+    </div>
+</body>
+</html>
